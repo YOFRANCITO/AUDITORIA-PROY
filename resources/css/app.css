@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+
+.primaryButton {
+    @apply rounded py-1 px-2 font-semibold text-white bg-gradient-to-t from-blue-500 to-blue-400;
+}
+
+.reactiveBar{
+    @apply w-0 group-hover:w-full p-0.5 group-hover:bg-blue-700;
+}
+
+.textReactiveBar{
+    @apply group-hover:text-blue-700 transition duration-200;
+}
+
+.darkHoverContainer {
+    @apply absolute top-0 left-0 w-full h-full bg-gray-900/40  rounded-xl hover:bg-transparent p-4 flex flex-col justify-end transition-colors duration-200;
+}
